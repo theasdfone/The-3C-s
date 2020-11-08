@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container{
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5,1fr);
+	grid-gap: 10px;
+	width: 100vw;
+	height:100vh;
+	background-image: url("newYearsEve.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 30%;
+	z-index: 1;
+}
+
+.bluelights{
+	background-image:url("christmasBlue.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	overflow: hidden;
+	background-size: 50px 80px;
+	animation-name:flashBlue;
+	animation-iteration-count: infinite;
+	animation-duration:1s;
+	z-index: 1;
+}
+
+.yellowlights{
+	background-image:url("christmasYellow.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	overflow: hidden;
+	background-size: 50px 80px;
+	animation-name:flashYellow;
+	animation-iteration-count: infinite;
+	animation-duration:1s;
+	z-index: 1;
+}
+
+.redlights{
+	background-image:url("christmasRed.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	overflow: hidden ;
+	background-size: 50px 80px;
+	animation-name:flashRed;
+	animation-iteration-count: infinite;
+	animation-duration:0.75s;
+	z-index: 1;
+}
+
+.center{
+	text-align:center;
+	top:150px;
+	left:50px;
+	position: absolute;
+	z-index: 2;
+	color:	#FFFFFF;
+}
+.centerP{
+	text-align:center;
+	top:250px;
+	left:60px;
+	position: absolute;
+	z-index: 2;
+	color:	#FFFFFF;
+}
+
+.button{
+	background-image:url("buttonUI.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	border-radius: 10px;
+	top:350px;
+	left:60px;
+	position: absolute;
+	z-index: 2;
+}
+
+.button2{
+	background-image:url("buttonUI.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	border-radius: 10px;
+	top:425px;
+	left:60px;
+	position: absolute;
+	z-index: 2;
+}
+
+
+@keyframes flashBlue{
+	0%,100%{background-image:url("christmasBlue.png");}
+	50% {background-image:url("christmasBlueFlash.png");}
+}
+@keyframes flashYellow{
+	0%,100% {background-image:url("christmasYellow.png");}
+	50% {background-image:url("christmasYellowFlash.png");}
+}
+@keyframes flashRed{
+	0%,100% {background-image:url("christmasRed.png");}
+	50% {background-image:url("christmasRedFlash.png");}
+}
+</style>
+</head>
+<div class = "center">
+ <h1 style="font-size:60px;"> Can't go away this holiday season? </h1>
+</div>
+
+<div class = "centerP">
+ <h1 style="font-size: 30px;"> Come join us and see the world virtually</h1>
+</div>
+
+<a href="https://docs.google.com/presentation/d/1Td_LpXaDdeyqIbqEEO-wkZ7f7TrjIH_dfr08bV0UvjQ/edit?usp=sharing">
+<div class = "button"> 
+  <h1 style ="font-size: 25px; color:#FFFFFF"> GET THE APP TODAY </h1>
+</div>
+</a>
+<a href="file:///C:/Users/samal/Desktop/Hackathon/ChristmasLights/BlogPost.html">
+<div class = "button2"> 
+  <h1 style ="font-size: 15px; color:#FFFFFF"> Check out our blog! </h1>
+</div>
+</a>
+<div class="container">
+ <div class="bluelights"></div>
+ <div class="redlights"></div>
+ <div class="bluelights"></div>
+ <div class="yellowlights"></div>
+ <div class="redlights"></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div class="yellowlights"></div>
+ <div class="bluelights"></div>
+ <div class="redlights"></div>
+ <div class="bluelights"></div>
+ <div class="yellowlights"></div>
+</div>
+</body>
+</html>
